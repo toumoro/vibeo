@@ -1,0 +1,23 @@
+{namespace vibeo=Tx_Vibeo_ViewHelpers} 
+
+<f:layout name="Default" />
+
+
+<f:section name="main">
+
+	<f:flashMessages />
+
+	<div role="application">
+	
+		<div class="tx-vibeo-single-media-item">
+			<f:render partial="Media/Properties" arguments="{media:media, settings:settings, extRelativePath:extRelativePath}" />
+		</div>
+		
+		<script type="text/javascript">
+			$('#tx-vibeo-media-{media.uid}').mediaelementplayer(
+				<f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
+			);
+		</script>
+		
+	</div>
+</f:section>

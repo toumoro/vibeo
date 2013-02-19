@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Vibeo accessible HTML5 media player - Based on MediaElement.js extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+		
+			<label index="vibeomedialist.media">Media files</label>
+			<label index="vibeomedialist.playerappearance">Player appearance</label>
+			<label index="vibeomedialist.playerbehaviour">Player behaviour</label>
+			<label index="vibeomedialist.listing">Listing options</label>
+			
+			<label index="vibeomedialist.records.pages">Pages containing the media records to display</label>
+			<label index="vibeomedialist.records.media">Specific media records to display</label>
+		
+			<label index="vibeomedialist.player.videoWidth">Player width for videos</label>
+			<label index="vibeomedialist.player.videoHeight">Player height for videos</label>
+			<label index="vibeomedialist.player.audioWidth">Player width for audio</label>
+			<label index="vibeomedialist.player.audioHeight">Player height for audio</label>
+			<label index="vibeomedialist.player.enableAutosize">Enable Flash and Silverlight to resize to content size</label>
+			<label index="vibeomedialist.player.alwaysShowControls">Hide controls when playing and mouse is not over the video</label>
+			<label index="vibeomedialist.player.overlayControls">Display controls over the video</label>
+			<label index="vibeomedialist.player.showCaptionPopup">Show caption popup</label>
+			<label index="vibeomedialist.player.videoVolume">Volume trackbar orientation (horizontal or vertical)</label>
+			<label index="vibeomedialist.player.videoVolume.horizontal">Horizontal</label>
+			<label index="vibeomedialist.player.videoVolume.vertical">Vertical</label>
+			<label index="vibeomedialist.player.features">The order of controls you want on the control bar (ex.: ['playpause','progress','current','duration','tracks','volume','fullscreen'])</label>
+			<label index="vibeomedialist.player.alwaysShowHours">Forces the the display of the hour marker (## =00 =00)</label>
+			<label index="vibeomedialist.player.showTimecodeFrameCount">Show framecount in timecode (## =00 =00 =00)</label>
+			<label index="vibeomedialist.player.framesPerSecond">Frames per second. Used when showTimecodeFrameCount is enabled</label>
+			
+			<label index="vibeomedialist.player.startVolume">Default volume at startup (0-1)</label>
+			<label index="vibeomedialist.player.loop">Make the player automatically restart</label>
+			<label index="vibeomedialist.player.iPadUseNativeControls">Force iPad's native controls</label>
+			<label index="vibeomedialist.player.iPhoneUseNativeControls">Force iPhone's native controls</label>
+			<label index="vibeomedialist.player.AndroidUseNativeControls">Force Android's native controls</label>
+			<label index="vibeomedialist.player.enableKeyboard">Enable keyboard control support</label>
+			<label index="vibeomedialist.player.pauseOtherPlayers">Enable pausing of other players on the page when this player starts</label>
+			<label index="vibeomedialist.player.keyActions">Array of keyboard commands</label>
+
+			<label index="vibeomedialist.list.startWithThumbnails">Display thumbnails in the list of videos and resize them automatically on click</label>
+			
+			<label index="vibeosinglemedia.files">Files used for this element. Video and audio elements can have multiple files that will automatically rollback depending on the browser's supported formats. </label>
+			<label index="vibeosinglemedia.url">Or, use a link to a video on Youtube or Vimeo. It will be played using the Vibeo player.</label>
+			<label index="vibeosinglemedia.description">Text description</label>
+			<label index="vibeosinglemedia.image">Preview image (optional). Also used as replacement image if the video or audio file cannot be played</label>
+			<label index="vibeosinglemedia.track">Track files used for subtitles during video playback.</label>
+		</languageKey>
+		
+		<languageKey index="qc" type="array">
+		
+			<label index="vibeomedialist.media">Médias</label>
+			<label index="vibeomedialist.playerappearance">Apparence du lecteur</label>
+			<label index="vibeomedialist.playerbehaviour">Comportement du lecteur</label>
+			<label index="vibeomedialist.listing">Options de la liste</label>
+			
+			<label index="vibeomedialist.records.pages">Pages contenant les enregistrement médias à afficher</label>
+			<label index="vibeomedialist.records.media">Enregistrements spécifiques à afficher</label>
+		
+			<label index="vibeomedialist.player.videoWidth">Largeur du lecteur vidéo</label>
+			<label index="vibeomedialist.player.videoHeight">Hauteur du lecteur vidéo</label>
+			<label index="vibeomedialist.player.audioWidth">Largeur du lecteur audio</label>
+			<label index="vibeomedialist.player.audioHeight">Hauteur du lecteur audio</label>
+			<label index="vibeomedialist.player.enableAutosize">Activer le lecteur Flash et Silverlight pour redimensionner le contenu automatiquement.</label>
+			<label index="vibeomedialist.player.alwaysShowControls">Cacher les contrôles lors de la lecture et que la souris n'est pas placée sur le vidéo.</label>
+			<label index="vibeomedialist.player.overlayControls">Afficher les contrôles par-dessus le vidéo</label>
+			<label index="vibeomedialist.player.showCaptionPopup">Afficher la fenêtre de sous-titre</label>
+			<label index="vibeomedialist.player.videoVolume">Orientation de la barre de volume (horizontal ou vertical)</label>
+			<label index="vibeomedialist.player.videoVolume.horizontal">Horizontal</label>
+			<label index="vibeomedialist.player.videoVolume.vertical">Vertical</label>
+			<label index="vibeomedialist.player.features">Ordre des contrôles à afficher dans la barre de contrôles (ex.: ['playpause','progress','current','duration','tracks','volume','fullscreen'])</label>
+			<label index="vibeomedialist.player.alwaysShowHours">Toujours afficher les heures (## =00 =00)</label>
+			<label index="vibeomedialist.player.showTimecodeFrameCount">Afficher le compteur d'images dans le compteur de temps (## =00 =00 =00)</label>
+			<label index="vibeomedialist.player.framesPerSecond">Nombre d'images par secondes. À utiliser quand showTimecodeFrameCount est activé</label>
+			
+			<label index="vibeomedialist.player.startVolume">Volume par défaut au début (0-1)</label>
+			<label index="vibeomedialist.player.loop">Rejouer automatiquement</label>
+			<label index="vibeomedialist.player.iPadUseNativeControls">Utiliser les contrôles natifs du iPad</label>
+			<label index="vibeomedialist.player.iPhoneUseNativeControls">Utiliser les contrôles natifs du iPod</label>
+			<label index="vibeomedialist.player.AndroidUseNativeControls">Utiliser les contrôles natifs d'Android</label>
+			<label index="vibeomedialist.player.enableKeyboard">Activer le support du contrôle par le clavier</label>
+			<label index="vibeomedialist.player.pauseOtherPlayers">Activer l'arrêt des autres lecteur de la page lorsque ce lecteur est activé</label>
+			<label index="vibeomedialist.player.keyActions">Liste des commandes de clavier</label>
+
+			<label index="vibeomedialist.list.startWithThumbnails">Afficher les lecteurs en miniatures lors de l'affichage de la page et les redimensionner automatique lors de la lecture</label>
+			
+			<label index="vibeosinglemedia.files">Fichiers vidéos ou audio utilisés. Les éléments audio ou vidéo peuvent avoir plusieurs fichiers qui s'interchangeront en fonction des formats supportés par le navigateur.</label>
+			<label index="vibeosinglemedia.url">Ou, entrez le lien (URL) du vidéo sur Youtube ou Vimeo. Il sera joué avec le lecteur Vibéo.</label>
+			<label index="vibeosinglemedia.description">Description textuelle</label>
+			<label index="vibeosinglemedia.image">Image de prévisualisation (optionnelle), aussi utilisée comme remplacement si les fichiers audio ou vidéos ne peuvent pas être lus.</label>
+			<label index="vibeosinglemedia.track">Fichiers sous-titres utilisés durant la lecture du vidéo.</label>
+		</languageKey>
+		
+		<languageKey index="fr" type="array">
+		
+			<label index="vibeomedialist.media">Médias</label>
+			<label index="vibeomedialist.playerappearance">Apparence du lecteur</label>
+			<label index="vibeomedialist.playerbehaviour">Comportement du lecteur</label>
+			<label index="vibeomedialist.listing">Options de la liste</label>
+			
+			<label index="vibeomedialist.records.pages">Pages contenant les enregistrement médias à afficher</label>
+			<label index="vibeomedialist.records.media">Enregistrements spécifiques à afficher</label>
+		
+			<label index="vibeomedialist.player.videoWidth">Largeur du lecteur vidéo</label>
+			<label index="vibeomedialist.player.videoHeight">Hauteur du lecteur vidéo</label>
+			<label index="vibeomedialist.player.audioWidth">Largeur du lecteur audio</label>
+			<label index="vibeomedialist.player.audioHeight">Hauteur du lecteur audio</label>
+			<label index="vibeomedialist.player.enableAutosize">Activer le lecteur Flash et Silverlight pour redimensionner le contenu automatiquement.</label>
+			<label index="vibeomedialist.player.alwaysShowControls">Cacher les contrôles lors de la lecture et que la souris n'est pas placée sur le vidéo.</label>
+			<label index="vibeomedialist.player.overlayControls">Afficher les contrôles par-dessus le vidéo</label>
+			<label index="vibeomedialist.player.showCaptionPopup">Afficher la fenêtre de sous-titre</label>
+			<label index="vibeomedialist.player.videoVolume">Orientation de la barre de volume (horizontal ou vertical)</label>
+			<label index="vibeomedialist.player.videoVolume.horizontal">Horizontal</label>
+			<label index="vibeomedialist.player.videoVolume.vertical">Vertical</label>
+			<label index="vibeomedialist.player.features">Ordre des contrôles à afficher dans la barre de contrôles (ex.: ['playpause','progress','current','duration','tracks','volume','fullscreen'])</label>
+			<label index="vibeomedialist.player.alwaysShowHours">Toujours afficher les heures (## =00 =00)</label>
+			<label index="vibeomedialist.player.showTimecodeFrameCount">Afficher le compteur d'images dans le compteur de temps (## =00 =00 =00)</label>
+			<label index="vibeomedialist.player.framesPerSecond">Nombre d'images par secondes. À utiliser quand showTimecodeFrameCount est activé</label>
+			
+			<label index="vibeomedialist.player.startVolume">Volume par défaut au début (0-1)</label>
+			<label index="vibeomedialist.player.loop">Rejouer automatiquement</label>
+			<label index="vibeomedialist.player.iPadUseNativeControls">Utiliser les contrôles natifs du iPad</label>
+			<label index="vibeomedialist.player.iPhoneUseNativeControls">Utiliser les contrôles natifs du iPod</label>
+			<label index="vibeomedialist.player.AndroidUseNativeControls">Utiliser les contrôles natifs d'Android</label>
+			<label index="vibeomedialist.player.enableKeyboard">Activer le support du contrôle par le clavier</label>
+			<label index="vibeomedialist.player.pauseOtherPlayers">Activer l'arrêt des autres lecteur de la page lorsque ce lecteur est activé</label>
+			<label index="vibeomedialist.player.keyActions">Liste des commandes de clavier</label>
+
+			<label index="vibeomedialist.list.startWithThumbnails">Afficher les lecteurs en miniatures lors de l'affichage de la page et les redimensionner automatique lors de la lecture</label>
+			
+			<label index="vibeosinglemedia.files">Fichiers vidéos ou audio utilisés. Les éléments audio ou vidéo peuvent avoir plusieurs fichiers qui s'interchangeront en fonction des formats supportés par le navigateur.</label>
+			<label index="vibeosinglemedia.url">Ou, entrez le lien (URL) du vidéo sur Youtube ou Vimeo. Il sera joué avec le lecteur Vibéo.</label>
+			<label index="vibeosinglemedia.description">Description textuelle</label>
+			<label index="vibeosinglemedia.image">Image de prévisualisation (optionnelle), aussi utilisée comme remplacement si les fichiers audio ou vidéos ne peuvent pas être lus.</label>
+			<label index="vibeosinglemedia.track">Fichiers sous-titres utilisés durant la lecture du vidéo.</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tx_vibeo_domain_model_media</description>
+		<type>CSH</type>
+		<csh_table>tx_vibeo_domain_model_media</csh_table>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+	   
+			<label index="title.description">Title of this element</label>
+			<label index="subtitle.description">Subtitle of this element</label>
+			<label index="author.description">Author of this video or audio content</label>
+			<label index="description.description">Text description for this element</label>
+			<label index="path.description">Files used for this element. Video and audio elements can have multiple files that will automatically rollback depending on the browser's supported formats. Possible audio or video formats are: MP4 WEBM OGG MPEG M4V OGV MOV RTMP AAC MP1 MP2 MP3 MPG M4A OGA WAV FLV WMV</label>
+			<label index="url.description">URL of the media file is this is an external video or audio file</label>
+			<label index="image.description">Preview image, also used as replacement image if the video or audio file cannot be played.</label>
+			<label index="track.description">Track files used for subtitles during video playback. Possible formats are: VTT TTML SRT TXT CSV XML </label>
+		</languageKey>
+		<languageKey index="qc" type="array">
+	   
+			<label index="title.description">Titre de cet élément</label>
+			<label index="subtitle.description">Sous-titre de cet élément</label>
+			<label index="author.description">Auteur de cet élément</label>
+			<label index="description.description">Description textuelle de cet élément</label>
+			<label index="path.description">Fichiers vidéos ou audio utilisés. Les éléments audio ou vidéo peuvent avoir plusieurs fichiers qui s'interchangeront en fonction des formats supportés par le navigateur. Les formats possibles sont: MP4 WEBM OGG MPEG M4V OGV MOV RTMP AAC MP1 MP2 MP3 MPG M4A OGA WAV FLV</label>
+			<label index="url.description">URL du vidéo si vous voulez afficher un vidéo externe. Les fournisseurs supportés sont Youtube et Vimeo</label>
+			<label index="image.description">Image de prévisualisation, aussi utilisée comme remplacement si les fichiers audio ou vidéos ne peuvent pas être lus.</label>
+			<label index="track.description">Fichiers sous-titres utilisés durant la lecture du vidéo. Les formats possibles sont: VTT TTML SRT TXT CSV XML</label>
+			
+		</languageKey>
+		
+		<languageKey index="fr" type="array">
+	   
+			<label index="title.description">Titre de cet élément</label>
+			<label index="subtitle.description">Sous-titre de cet élément</label>
+			<label index="author.description">Auteur de cet élément</label>
+			<label index="description.description">Description textuelle de cet élément</label>
+			<label index="path.description">Fichiers vidéos ou audio utilisés. Les éléments audio ou vidéo peuvent avoir plusieurs fichiers qui s'interchangeront en fonction des formats supportés par le navigateur. Les formats possibles sont: MP4 WEBM OGG MPEG M4V OGV MOV RTMP AAC MP1 MP2 MP3 MPG M4A OGA WAV FLV</label>
+			<label index="url.description">URL du vidéo si vous voulez afficher un vidéo externe. Les fournisseurs supportés sont Youtube et Vimeo</label>
+			<label index="image.description">Image de prévisualisation, aussi utilisée comme remplacement si les fichiers audio ou vidéos ne peuvent pas être lus.</label>
+			<label index="track.description">Fichiers sous-titres utilisés durant la lecture du vidéo. Les formats possibles sont: VTT TTML SRT TXT CSV XML</label>
+			
+		</languageKey>
+	</data>
+</T3locallang>

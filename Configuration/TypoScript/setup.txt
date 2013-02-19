@@ -1,0 +1,138 @@
+plugin.tx_vibeo {
+	view {
+		templateRootPath = {$plugin.tx_vibeo.view.templateRootPath}
+		partialRootPath = {$plugin.tx_vibeo.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_vibeo.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_vibeo.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	
+	settings {
+	
+		includes {
+			# jQuery 1.7.2. Set to 0 to include your own.
+			jquery = {$plugin.tx_vibeo.settings.includes.jquery}
+					
+			# jQuery resize. Set to 0 to include your own.
+			jquery-resize = {$plugin.tx_vibeo.settings.includes.jquery-resize}
+			
+			# modernizr. Set to 0 to include your own.
+			modernizr = {$plugin.tx_vibeo.settings.includes.modernizr}
+			
+			# Default CSS. Set to 0 to include your own.
+			css = {$plugin.tx_vibeo.settings.includes.css}
+		}
+		
+		records {
+			# Pages to fetch media elements from. This must be a comma-separated list of page ids.
+			pages = {$plugin.tx_vibeo.settings.records.pages}
+			
+			# Specific media elements to display. This must be a comma-separated list of media record ids.
+			media = {$plugin.tx_vibeo.settings.records.media}
+		}
+		
+		player {
+			# if the <video width> is not specified, this is the default
+			defaultVideoWidth = {$plugin.tx_vibeo.settings.player.defaultVideoWidth}
+			
+			# if the <video height> is not specified, this is the default
+			defaultVideoHeight = {$plugin.tx_vibeo.settings.player.defaultVideoHeight}
+			
+			# if set, overrides <video width>
+			videoWidth = {$plugin.tx_vibeo.settings.player.videoWidth}
+			
+			# if set, overrides <video height>
+			videoHeight = {$plugin.tx_vibeo.settings.player.videoHeight}
+			
+			# width of audio player
+			audioWidth = {$plugin.tx_vibeo.settings.player.audioWidth}
+			
+			# height of audio player
+			audioHeight = {$plugin.tx_vibeo.settings.player.audioHeight}
+			
+			# initial volume when the player starts
+			startVolume = {$plugin.tx_vibeo.settings.player.startVolume}
+			
+			# useful for <audio> player loops
+			loop = {$plugin.tx_vibeo.settings.player.loop}
+			
+			# enables Flash and Silverlight to resize to content size
+			enableAutosize = {$plugin.tx_vibeo.settings.player.enableAutosize}
+			
+			# the order of controls you want on the control bar (and other plugins below)
+			features = {$plugin.tx_vibeo.settings.player.features}
+			
+			# Hide controls when playing and mouse is not over the video
+			alwaysShowControls = {$plugin.tx_vibeo.settings.player.alwaysShowControls}
+			
+			# Display controls over the video
+			overlayControls = {$plugin.tx_vibeo.settings.player.overlayControls}
+			
+			# Show caption popup
+			showCaptionPopup = {$plugin.tx_vibeo.settings.player.showCaptionPopup}
+			
+			# Volume trackbar orientation
+			videoVolume = {$plugin.tx_vibeo.settings.player.videoVolume}
+			
+			# force iPad's native controls
+			iPadUseNativeControls = {$plugin.tx_vibeo.settings.player.iPadUseNativeControls}
+			
+			# force iPhone's native controls
+			iPhoneUseNativeControls = {$plugin.tx_vibeo.settings.player.iPhoneUseNativeControls}
+			
+			# force Android's native controls
+			AndroidUseNativeControls = {$plugin.tx_vibeo.settings.player.AndroidUseNativeControls}
+			
+			# forces the hour marker (## =00 =00)
+			alwaysShowHours = {$plugin.tx_vibeo.settings.player.alwaysShowHours}
+			
+			# show framecount in timecode (## =00 =00 =00)
+			showTimecodeFrameCount = {$plugin.tx_vibeo.settings.player.showTimecodeFrameCount}
+			
+			# used when showTimecodeFrameCount is set to true
+			framesPerSecond = {$plugin.tx_vibeo.settings.player.framesPerSecond}
+			
+			# turns keyboard support on and off for this instance
+			enableKeyboard = {$plugin.tx_vibeo.settings.player.enableKeyboard}
+			
+			# when this player starts, it will pause other players
+			pauseOtherPlayers = {$plugin.tx_vibeo.settings.player.pauseOtherPlayers}
+			
+			# array of keyboard commands
+			keyActions = {$plugin.tx_vibeo.settings.player.keyActions}
+			
+			# Callback function to be called when player is initiated
+			success = {$plugin.tx_vibeo.settings.player.success}
+			
+			# Everything below is for translation of texts inside the player.
+			# You can use LLL references or direct strings.
+			tooltip = {$plugin.tx_vibeo.settings.player.tooltip}
+			playText = {$plugin.tx_vibeo.settings.player.playText}
+			pauseText = {$plugin.tx_vibeo.settings.player.pauseText}
+			fullscreenText = {$plugin.tx_vibeo.settings.player.fullscreenText}
+			unFullscreenText = {$plugin.tx_vibeo.settings.player.unFullscreenText}
+			muteTextMute = {$plugin.tx_vibeo.settings.player.muteTextMute}
+			muteTextUnmute = {$plugin.tx_vibeo.settings.player.muteTextUnmute}
+			volumeUpText = {$plugin.tx_vibeo.settings.player.volumeUpText}
+			volumeDownText = {$plugin.tx_vibeo.settings.player.volumeDownText}
+			tracksTextTurnOn = {$plugin.tx_vibeo.settings.player.tracksTextTurnOn}
+			tracksTextTurnOff = {$plugin.tx_vibeo.settings.player.tracksTextTurnOff}
+			rewindText = {$plugin.tx_vibeo.settings.player.rewindText}
+			forwardText = {$plugin.tx_vibeo.settings.player.forwardText}
+			hour = {$plugin.tx_vibeo.settings.player.hour}
+			minutes = {$plugin.tx_vibeo.settings.player.minutes}
+			seconds = {$plugin.tx_vibeo.settings.player.seconds}
+		}
+		
+		list {
+			# Display thumbnails in the list of videos and resize them automatically on click.
+			startWithThumbnails = {$plugin.tx_vibeo.settings.list.startWithThumbnails}
+		}
+	}
+	
+}

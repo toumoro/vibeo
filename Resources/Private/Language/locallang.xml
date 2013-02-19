@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Vibéo accessible HTML5 media player - Based on MediaElement.js extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_vibeo_domain_model_media">Media element (Video or audio file)</label>
+			<label index="tx_vibeo_domain_model_media.title">Title of this element</label>
+			<label index="tx_vibeo_domain_model_media.subtitle">Subtitle of this element</label>
+			<label index="tx_vibeo_domain_model_media.author">Author of this video or audio content</label>
+			<label index="tx_vibeo_domain_model_media.description">Text description for this element</label>
+			<label index="tx_vibeo_domain_model_media.path">Files used for this element. Video and audio elements can have multiple files that will automatically rollback depending on the browser's supported formats. Possible audio or video formats are: MP4 WEBM OGG MPEG M4V OGV MOV RTMP AAC MP1 MP2 MP3 MPG M4A OGA WAV FLV</label>
+			<label index="tx_vibeo_domain_model_media.url">URL of the media file is this is an external video or audio file</label>
+			<label index="tx_vibeo_domain_model_media.image">Replacement image if the video or audio file cannot be played.</label>
+			<label index="tx_vibeo_domain_model_media.track">Track files used for subtitles during video playback. Possible formats are: VTT TTML SRT TXT CSV XML </label>
+			
+			<label index="player.tooltip">Help</label>
+			<label index="player.playText">Play</label>
+			<label index="player.pauseText">Pause</label>
+			<label index="player.fullscreenText">Toggle fullscreen mode</label>
+			<label index="player.unFullscreenText">Quit fullscreen mode</label>
+			<label index="player.muteTextMute">Mute</label>
+			<label index="player.muteTextUnmute">Unmute</label>
+			<label index="player.volumeUpText">Turn up volume</label>
+			<label index="player.volumeDownText">Turn down volume</label>
+			<label index="player.tracksTextTurnOn">Activate subtitles</label>
+			<label index="player.tracksTextTurnOff">Deactivate subtitles</label>
+			<label index="player.rewindText">Rewind</label>
+			<label index="player.forwardText">Forward</label>
+			<label index="player.hour">hours</label>
+			<label index="player.minutes">minutes</label>
+			<label index="player.seconds">seconds</label>
+			<label index="player.cannotPlayVideo">The player cannot play this video.</label>
+			<label index="player.accessibilityWarning">By clicking on the video, you will change the context of this page.</label>
+		</languageKey>
+		
+		<languageKey index="qc" type="array">
+			<label index="tx_vibeo_domain_model_media">Élément média (Fichier vidéo ou audio)</label>
+			<label index="tx_vibeo_domain_model_media.title">Titre de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.subtitle">Sous-titre de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.author">Auteur de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.description">Description textuelle de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.path">Fichiers vidéos ou audio utilisés. Les éléments audio ou vidéo peuvent avoir plusieurs fichiers qui s'interchangeront en fonction des formats supportés par le navigateur. Les formats possibles sont: MP4 WEBM OGG MPEG M4V OGV MOV RTMP AAC MP1 MP2 MP3 MPG M4A OGA WAV FLV</label>
+			<label index="tx_vibeo_domain_model_media.url">URL du vidéo si vous voulez afficher un vidéo externe. Les fournisseurs supportés sont Youtube et Vimeo</label>
+			<label index="tx_vibeo_domain_model_media.image">Image de prévisualisation, aussi utilisée comme remplacement si les fichiers audio ou vidéos ne peuvent pas être lus.</label>
+			<label index="tx_vibeo_domain_model_media.track">Fichiers sous-titres utilisés durant la lecture du vidéo. Les formats possibles sont: VTT TTML SRT TXT CSV XML </label>
+			
+			<label index="player.tooltip">Aide</label>
+			<label index="player.playText">Jouer</label>
+			<label index="player.pauseText">Mettre en pause</label>
+			<label index="player.fullscreenText">Activer le mode plein écran</label>
+			<label index="player.unFullscreenText">Quitter le mode plein écran</label>
+			<label index="player.muteTextMute">Couper le volume</label>
+			<label index="player.muteTextUnmute">Ouvrir le volume</label>
+			<label index="player.volumeUpText">Monter le volume</label>
+			<label index="player.volumeDownText">Descendre le volume</label>
+			<label index="player.tracksTextTurnOn">Activer les sous-titres</label>
+			<label index="player.tracksTextTurnOff">Désactiver les sous-titres</label>
+			<label index="player.rewindText">Reculer</label>
+			<label index="player.forwardText">Avancer</label>
+			<label index="player.hour">heures</label>
+			<label index="player.minutes">minutes</label>
+			<label index="player.seconds">secondes</label>
+			<label index="player.cannotPlayVideo">Aucune possibilité de jouer la vidéo.</label>
+			<label index="player.accessibilityWarning">En appuyant sur le vidéo, vous changerez le contexte de la page.</label>
+		</languageKey>
+		
+		<languageKey index="fr" type="array">
+			<label index="tx_vibeo_domain_model_media">Élément média (Fichier vidéo ou audio)</label>
+			<label index="tx_vibeo_domain_model_media.title">Titre de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.subtitle">Sous-titre de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.author">Auteur de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.description">Description textuelle de cet élément</label>
+			<label index="tx_vibeo_domain_model_media.path">Fichiers vidéos ou audio utilisés. Les éléments audio ou vidéo peuvent avoir plusieurs fichiers qui s'interchangeront en fonction des formats supportés par le navigateur. Les formats possibles sont: MP4 WEBM OGG MPEG M4V OGV MOV RTMP AAC MP1 MP2 MP3 MPG M4A OGA WAV FLV</label>
+			<label index="tx_vibeo_domain_model_media.url">URL du vidéo si vous voulez afficher un vidéo externe. Les fournisseurs supportés sont Youtube et Vimeo</label>
+			<label index="tx_vibeo_domain_model_media.image">Image de prévisualisation, aussi utilisée comme remplacement si les fichiers audio ou vidéos ne peuvent pas être lus.</label>
+			<label index="tx_vibeo_domain_model_media.track">Fichiers sous-titres utilisés durant la lecture du vidéo. Les formats possibles sont: VTT TTML SRT TXT CSV XML </label>
+			
+			<label index="player.tooltip">Aide</label>
+			<label index="player.playText">Jouer</label>
+			<label index="player.pauseText">Mettre en pause</label>
+			<label index="player.fullscreenText">Activer le mode plein écran</label>
+			<label index="player.unFullscreenText">Quitter le mode plein écran</label>
+			<label index="player.muteTextMute">Couper le volume</label>
+			<label index="player.muteTextUnmute">Ouvrir le volume</label>
+			<label index="player.volumeUpText">Monter le volume</label>
+			<label index="player.volumeDownText">Descendre le volume</label>
+			<label index="player.tracksTextTurnOn">Activer les sous-titres</label>
+			<label index="player.tracksTextTurnOff">Désactiver les sous-titres</label>
+			<label index="player.rewindText">Reculer</label>
+			<label index="player.forwardText">Avancer</label>
+			<label index="player.hour">heures</label>
+			<label index="player.minutes">minutes</label>
+			<label index="player.seconds">secondes</label>
+			<label index="player.cannotPlayVideo">Aucune possibilité de jouer la vidéo.</label>
+			<label index="player.accessibilityWarning">En appuyant sur le vidéo, vous changerez le contexte de la page.</label>
+		</languageKey>
+	</data>
+</T3locallang>

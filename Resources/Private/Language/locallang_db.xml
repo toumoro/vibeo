@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'vibeo'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="tx_vibeo_domain_model_media">Media</label>
+			<label index="tx_vibeo_domain_model_media.title">Title</label>
+			<label index="tx_vibeo_domain_model_media.subtitle">Subtitle</label>
+			<label index="tx_vibeo_domain_model_media.author">Author</label>
+			<label index="tx_vibeo_domain_model_media.description">Description</label>
+			<label index="tx_vibeo_domain_model_media.path">Media files (Audio or video)</label>
+			<label index="tx_vibeo_domain_model_media.url">Or use an external url (Youtube or Vimeo)</label>
+			<label index="tx_vibeo_domain_model_media.image">Image (Video preview)</label>
+			<label index="tx_vibeo_domain_model_media.track">Track file (Captions)</label>
+
+		</languageKey>
+		<languageKey index="qc" type="array">
+            
+			<label index="tx_vibeo_domain_model_media">Média</label>
+			<label index="tx_vibeo_domain_model_media.title">Titre</label>
+			<label index="tx_vibeo_domain_model_media.subtitle">Sous-titre</label>
+			<label index="tx_vibeo_domain_model_media.author">Auteur</label>
+			<label index="tx_vibeo_domain_model_media.description">Description</label>
+			<label index="tx_vibeo_domain_model_media.path">Fichiers vidéos ou audio utilisés.</label>
+			<label index="tx_vibeo_domain_model_media.url">Ou, utilisez un fichier externe en écriant le URL (adresse) (Youtube or Vimeo)</label>
+			<label index="tx_vibeo_domain_model_media.image">Image (Prévisualisation du vidéo)</label>
+			<label index="tx_vibeo_domain_model_media.track">Fichier des sous-titres</label>
+
+		</languageKey>
+		
+		<languageKey index="fr" type="array">
+            
+			<label index="tx_vibeo_domain_model_media">Média</label>
+			<label index="tx_vibeo_domain_model_media.title">Titre</label>
+			<label index="tx_vibeo_domain_model_media.subtitle">Sous-titre</label>
+			<label index="tx_vibeo_domain_model_media.author">Auteur</label>
+			<label index="tx_vibeo_domain_model_media.description">Description</label>
+			<label index="tx_vibeo_domain_model_media.path">Fichiers vidéos ou audio utilisés.</label>
+			<label index="tx_vibeo_domain_model_media.url">Ou, utilisez un fichier externe en écriant le URL (adresse) (Youtube or Vimeo)</label>
+			<label index="tx_vibeo_domain_model_media.image">Image (Prévisualisation du vidéo)</label>
+			<label index="tx_vibeo_domain_model_media.track">Fichier des sous-titres</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

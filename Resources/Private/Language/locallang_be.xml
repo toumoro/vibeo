@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'vibeo'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="vibeomedialist.title">Accessible list of media files</label>
+			<label index="vibeomedialist.description">List of media records (audio/video) played using Vibeo's accessible player</label>
+
+			<label index="vibeosinglemedia.title">Accessible media file</label>
+			<label index="vibeosinglemedia.description">Single media file (audio/video) played using Vibeo's accessible player</label>
+
+		</languageKey>
+		
+		<languageKey index="qc" type="array">
+            
+			<label index="vibeomedialist.title">Liste de fichiers médias accessibles</label>
+			<label index="vibeomedialist.description">Liste d'enregistrements média (audio/vidéo) lus avec le lecteur accessible Vibéo</label>
+
+			<label index="vibeosinglemedia.title">Fichier média accessible</label>
+			<label index="vibeosinglemedia.description">Fichier média unique (audio/vidéo) lu avec le lecteur accessible Vibéo</label>
+
+		</languageKey>
+		
+		<languageKey index="fr" type="array">
+            
+			<label index="vibeomedialist.title">Liste de fichiers médias accessibles</label>
+			<label index="vibeomedialist.description">Liste d'enregistrements média (audio/vidéo) lus avec le lecteur accessible Vibéo</label>
+
+			<label index="vibeosinglemedia.title">Fichier média accessible</label>
+			<label index="vibeosinglemedia.description">Fichier média unique (audio/vidéo) lu avec le lecteur accessible Vibéo</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

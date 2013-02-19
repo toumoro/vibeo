@@ -1,0 +1,59 @@
+{namespace vibeo=Tx_Vibeo_ViewHelpers} 
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+
+<f:section name="main">
+
+	<f:flashMessages />
+	
+		<f:for each="{medias}" as="media">
+		
+			<div class="tx-vibeo-list-media-item">
+				<f:render partial="Media/Properties" arguments="{media:media, settings:settings, extRelativePath:extRelativePath}" />
+			</div>
+				
+		</f:for>
+		
+		<script type="text/javascript">
+			// This function will be called after player is initiated	
+			function tx_vibeo_player_success_callback(media, node, player) {
+				//var events = ['loadstart', 'play','pause', 'ended']; // events that can be added
+				<f:if condition="{settings.list.startWithThumbnails}">
+					media.addEventListener('play', function(e) {
+						
+						var w = <f:format.number decimals="0">{finalVideoWidth}</f:format.number>;
+						var h = <f:format.number decimals="0">{finalVideoHeight}</f:format.number>;
+
+						$(node).parents('.tx-vibeo-player-wrapper').width(w).height(h);
+						
+						player.setPlayerSize(w, h);
+						player.setControlsSize();
+						player.media.setVideoSize(w, h);
+						
+						// For MediaElement 2.10.3+
+						//$(node).parents('.tx-vibeo-player-wrapper').css({width:h+'px',height:h+'px'});
+						//$(window).resize(); // MediaElement binds events to resize for responsiveness
+						//$(document).resize();
+					});
+				</f:if>
+			}
+			
+			$('.tx-vibeo-player').mediaelementplayer(
+				<f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
+			);
+
+		</script>
+
+</f:section>

@@ -1,0 +1,17 @@
+.tx-vibeo  {}
+.tx-vibeo  .tx-vibeo-accessibility-warning {font-size:0;text-indent:-4000em;}
+
+.tx-vibeo .tx-vibeo-list-media-item {margin:2em 0; clear:both;}
+.tx-vibeo .tx-vibeo-single-media-item {margin:2em 0; clear:both;}
+
+.tx-vibeo  .tx-vibeo-list-media-item  .tx-vibeo-player-wrapper {float:left; padding:0 20px 0 0;}
+.tx-vibeo  .tx-vibeo-single-media-item  .tx-vibeo-player-wrapper {margin:0 20px 20x 0;}
+
+.tx-vibeo  .tx-vibeo-player {} /* video element before initialization */
+.tx-vibeo  .mejs-video .tx-vibeo-player  {} /* video element after initialization */
+
+.tx-vibeo .tx-vibeo-media-info {}
+.tx-vibeo .tx-vibeo-media-info h3 {margin:0 0 10px 0;}
+.tx-vibeo .tx-vibeo-media-info .tx-vibeo-media-subtitle {margin: 0 0 6px 0;font-weight:bold;display:block;}
+.tx-vibeo .tx-vibeo-media-info .tx-vibeo-media-author {font-size:.8em;display:block;}
+.tx-vibeo .tx-vibeo-media-info p {margin:5px 0;}
