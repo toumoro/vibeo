@@ -28,28 +28,29 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		
 		<script type="text/javascript">
 			// This function will be called after player is initiated	
-			function tx_vibeo_player_success_callback(media, node, player) {
-				//var events = ['loadstart', 'play','pause', 'ended']; // events that can be added
-				<f:if condition="{settings.list.startWithThumbnails}">
-					media.addEventListener('play', function(e) {
-						
-						var w = <f:format.number decimals="0">{finalVideoWidth}</f:format.number>;
-						var h = <f:format.number decimals="0">{finalVideoHeight}</f:format.number>;
+			if(typeof tx_vibeo_player_success_callback == 'undefined') {
+				var tx_vibeo_player_success_callback = function (media, node, player) {
+					//var events = ['loadstart', 'play','pause', 'ended']; // events that can be added
+					<f:if condition="{settings.list.startWithThumbnails}">
+						media.addEventListener('play', function(e) {
+							
+							var w = <f:format.number decimals="0">{finalVideoWidth}</f:format.number>;
+							var h = <f:format.number decimals="0">{finalVideoHeight}</f:format.number>;
 
-						$(node).parents('.tx-vibeo-player-wrapper').width(w).height(h);
-						
-						player.setPlayerSize(w, h);
-						player.setControlsSize();
-						player.media.setVideoSize(w, h);
-						
-						// For MediaElement 2.10.3+
-						//$(node).parents('.tx-vibeo-player-wrapper').css({width:h+'px',height:h+'px'});
-						//$(window).resize(); // MediaElement binds events to resize for responsiveness
-						//$(document).resize();
-					});
-				</f:if>
+							$(node).parents('.tx-vibeo-player-wrapper').width(w).height(h);
+							
+							player.setPlayerSize(w, h);
+							player.setControlsSize();
+							player.media.setVideoSize(w, h);
+							
+							// For MediaElement 2.10.3+
+							//$(node).parents('.tx-vibeo-player-wrapper').css({width:h+'px',height:h+'px'});
+							//$(window).resize(); // MediaElement binds events to resize for responsiveness
+							//$(document).resize();
+						});
+					</f:if>
+				}
 			}
-			
 			$('.tx-vibeo-player').mediaelementplayer(
 				<f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
 			);

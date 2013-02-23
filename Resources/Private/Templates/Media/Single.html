@@ -7,17 +7,19 @@
 
 	<f:flashMessages />
 
-	<div role="application">
 	
 		<div class="tx-vibeo-single-media-item">
 			<f:render partial="Media/Properties" arguments="{media:media, settings:settings, extRelativePath:extRelativePath}" />
 		</div>
 		
 		<script type="text/javascript">
+			// This function will be called after player is initiated	
+			if(typeof tx_vibeo_player_success_callback == 'undefined') {
+				var tx_vibeo_player_success_callback = function (media, node, player) {}
+			}
 			$('#tx-vibeo-media-{media.uid}').mediaelementplayer(
 				<f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
 			);
 		</script>
-		
-	</div>
+
 </f:section>

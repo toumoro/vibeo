@@ -15,3 +15,7 @@
 .tx-vibeo .tx-vibeo-media-info .tx-vibeo-media-subtitle {margin: 0 0 6px 0;font-weight:bold;display:block;}
 .tx-vibeo .tx-vibeo-media-info .tx-vibeo-media-author {font-size:.8em;display:block;}
 .tx-vibeo .tx-vibeo-media-info p {margin:5px 0;}
+
+/* Small fixes */
+.mejs-overlay-play {z-index: 100;}
+.mejs-controls {z-index: 100;}

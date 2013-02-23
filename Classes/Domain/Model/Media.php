@@ -115,6 +115,15 @@ class Tx_Vibeo_Domain_Model_Media extends Tx_Extbase_DomainObject_AbstractEntity
 	*/
 	
 	/**
+	 * uid setter
+	 * @param integer $uid
+	 * @return void
+	 */
+	public function setUid($uid) {
+	   $this->uid = $uid;
+	}
+	
+	/**
 	 * Returns the title
 	 *
 	 * @return string $title

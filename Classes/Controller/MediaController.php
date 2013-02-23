@@ -240,6 +240,8 @@ $this->configurationManager = $configurationManager;
 			$media->setImage($this->settings['media']['image']);
 		if($this->settings['media']['track'])
 			$media->setTrack($this->settings['media']['track']);
+			
+		$media->setUid(uniqid());
 		
 		$this->view->assign('settings', $this->settings); // Reassign because we changed the settings
 		$this->view->assign('media', $media);
