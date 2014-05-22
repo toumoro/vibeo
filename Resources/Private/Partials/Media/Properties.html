@@ -1,65 +1,64 @@
 {namespace vibeo=Tx_Vibeo_ViewHelpers} 
 
-<div class="tx-vibeo-player-wrapper" width="{settings.player.videoWidth}" style="width:{settings.player.videoWidth}px;position:relative;">
 
-	<span class="tx-vibeo-accessibility-warning"><f:translate key="player.accessibilityWarning" /></span>
 
-	<!-- Video -->
-	<!--- This condition allows us to make a string comparison (otherwise unsupported). It calls the getMediaType method --->
-	<f:if condition="{0:media.mediaType} == {0:'video'}">
-		<video class="tx-vibeo-player" width="{settings.player.videoWidth}" height="{settings.player.videoHeight}" style="max-width:100%;height:100%;" id="tx-vibeo-media-{media.uid}" <f:if condition="{media.image}">poster="uploads/tx_vibeo/{media.image}"</f:if> preload="none">
-		
-			<f:if condition="{media.url}">
-				<f:then>
-					<!-- External video -->
-					<source src="{media.url}" type="{media.fileType}">
-				</f:then>
-				<f:else>
-					<!-- Internal video -->
-				
-					<!--- This calls the getMediaFilesInformation() method --->
-					<f:for each="{media.mediaFilesInformation}" as="file">
-						<source type="{file.mimetype}" src="{file.path}" />			
-					</f:for>
-					
-					<f:if condition="{media.track}">
-						<track kind="subtitles" src="uploads/tx_vibeo/{media.track}" /> <!--- srclang="en" --->
-					</f:if>
-					
-					<!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-					<object width="{settings.player.videoWidth}" height="{settings.player.videoHeight}" type="application/x-shockwave-flash" data="{extRelativePath}Resources/Public/Vibeo/flashmediaelement.swf">
-						<param name="movie" value="{extRelativePath}Resources/Public/Vibeo/flashmediaelement.swf" />
-						
-						<param name="flashvars" value="controls=true&file={media.firstMediaFile}<f:if condition="{media.image}">&poster=uploads/tx_vibeo/{media.image}</f:if>" />
-						
-						<!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-						<f:if condition="{media.image}">
-							<img src="uploads/tx_vibeo/{media.image}" width="{settings.player.videoWidth}" height="{settings.player.videoHeight}" alt="<f:translate key="player.cannotPlayVideo" />" />
-						</f:if>
-					</object>
-				</f:else>
-			</f:if>
-			
+<span class="tx-vibeo-accessibility-warning"><f:translate key="player.accessibilityWarning" /></span>
 
-		</video>
-	</f:if>
-	
-	<!-- Audio -->
-	<f:if condition="{0:media.mediaType} == {0:'audio'}">
-		<audio class="tx-vibeo-player" width="{settings.player.audioWidth}" height="{settings.player.audioHeight}" id="tx-vibeo-media-{media.uid}" preload="auto" controls>
-			<!--- This calls the getMediaFilesInformation() method --->
-			<f:for each="{media.mediaFilesInformation}" as="file">
-				<source type="{file.mimetype}" src="{file.path}" />			
-			</f:for>
-		</audio>
-	</f:if>
-</div>
+<!-- Video -->
+<!--- This condition allows us to make a string comparison (otherwise unsupported). It calls the getMediaType method --->
+<f:if condition="{0:media.mediaType} == {0:'video'}">
+    <div style="max-width:{settings.player.videoWidth}px; max-height:{settings.player.videoHeight}px">
+    <video class="tx-vibeo-player" width="100%" height="100%" style="width:100%;height:100%;" id="tx-vibeo-media-{media.uid}" <f:if condition="{media.image}">poster="uploads/tx_vibeo/{media.image}"</f:if> preload="none">
+        <f:if condition="{media.url}">
+            <f:then>
+                <!-- External video -->
+                <source src="{media.url}" type="{media.fileType}">
+            </f:then>
+            <f:else>
+                <!-- Internal video -->
+
+                <!--- This calls the getMediaFilesInformation() method --->
+                <f:for each="{media.mediaFilesInformation}" as="file">
+                    <source type="{file.mimetype}" src="{file.path}" />
+                </f:for>
+
+                <f:if condition="{media.track}">
+                    <track kind="subtitles" src="uploads/tx_vibeo/{media.track}" /> <!--- srclang="en" --->
+                </f:if>
+
+                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
+                <object width="100%" height="100%" style="width:100%;height:100%;" type="application/x-shockwave-flash" data="{extRelativePath}Resources/Public/Vibeo/flashmediaelement.swf">
+                    <param name="movie" value="{extRelativePath}Resources/Public/Vibeo/flashmediaelement.swf" />
+
+                    <param name="flashvars" value="controls=true&file={media.firstMediaFile}<f:if condition="{media.image}">&poster=uploads/tx_vibeo/{media.image}</f:if>" />
+
+                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
+                    <f:if condition="{media.image}">
+                        <img src="uploads/tx_vibeo/{media.image}" width="{settings.player.videoWidth}" height="{settings.player.videoHeight}" alt="<f:translate key="player.cannotPlayVideo" />" />
+                    </f:if>
+                </object>
+            </f:else>
+        </f:if>
+    </video>
+    </div>
+</f:if>
+
+<!-- Audio -->
+<f:if condition="{0:media.mediaType} == {0:'audio'}">
+    <div style="max-width:{settings.player.audioWidth}; max-height:{settings.player.audioHeight}">
+        <audio class="tx-vibeo-player" width="100%" height="100%" id="tx-vibeo-media-{media.uid}" preload="auto" controls>
+            <!--- This calls the getMediaFilesInformation() method --->
+            <f:for each="{media.mediaFilesInformation}" as="file">
+                <source type="{file.mimetype}" src="{file.path}" />
+            </f:for>
+        </audio>
+    </div>
+</f:if>
+
 
 <div class="tx-vibeo-media-info">
-	<h3>{media.title}</h3>
+    <f:if condition="{media.title}"><h3>{media.title}</h3></f:if>
 	<f:if condition="{media.subtitle}"><span class="tx-vibeo-media-subtitle">{media.subtitle}</span></f:if>
 	<f:if condition="{media.author}"><span class="tx-vibeo-media-author">{media.author}</span></f:if>
 	<f:format.html>{media.description}</f:format.html>
 </div>
-
-<div style="clear:both;"></div>

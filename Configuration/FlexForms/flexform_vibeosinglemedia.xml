@@ -21,7 +21,6 @@
 			</TCEforms>
 			<type>array</type>
 			<el>
-			
 				<settings.media.files>
 					<TCEforms>
 						<label>LLL:EXT:vibeo/Resources/Private/Language/locallang_flexforms.xml:vibeosinglemedia.files</label>
@@ -32,6 +31,7 @@
 							<allowed>MP4, WEBM, OGG, MPEG, M4V, OGV, MOV, RTMP, AAC, MP1, MP2, MP3, MPG, M4A, OGA, WAV, FLV, WMV</allowed>
 							<disallowed>php</disallowed>
 							<size>5</size>
+                            <maxitems>10</maxitems>
 						</config>
 					</TCEforms>
 				</settings.media.files>
@@ -294,9 +294,9 @@
 						<config>
 							<type>input</type>
 							<size>12</size>
-							<max>1</max>
-							<eval>num</eval>
-							<default>0.8</default>
+							<max>3</max>
+							<eval>int</eval>
+							<default>80</default>
 							<checkbox/>
 						</config>
 					</TCEforms>

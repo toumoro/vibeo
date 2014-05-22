@@ -53,60 +53,7 @@ class Tx_Vibeo_Controller_MediaController extends Tx_Extbase_MVC_Controller_Acti
 	public function injectMediaRepository(Tx_Vibeo_Domain_Repository_MediaRepository $mediaRepository) {
 		$this->mediaRepository = $mediaRepository;
 	}
-	
-	/**
-	 * Injects the Configuration Manager and is initializing the framework settings
-	 *
-	 * @param Tx_Extbase_Configuration_ConfigurationManagerInterface $configurationManager Instance of the Configuration Manager
-	 * @return void
-	 */ 
-	/*
-	Code taken from "news" and not yet implemented. Used to merge ts and fleform settings and add stdWrap support to configuration.
-	public function injectConfigurationManager(Tx_Extbase_Configuration_ConfigurationManagerInterface $configurationManager) {
-$this->configurationManager = $configurationManager;
 
-		$tsSettings = $this->configurationManager->getConfiguration(
-				Tx_Extbase_Configuration_ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK,
-				'news',
-				'news_pi1'
-			);
-		$originalSettings = $this->configurationManager->getConfiguration(
-				Tx_Extbase_Configuration_ConfigurationManagerInterface::CONFIGURATION_TYPE_SETTINGS
-			);
-
-			// start override
-		if (isset($tsSettings['settings']['overrideFlexformSettingsIfEmpty'])) {
-			$overrideIfEmpty = t3lib_div::trimExplode(',', $tsSettings['settings']['overrideFlexformSettingsIfEmpty'], TRUE);
-			foreach ($overrideIfEmpty as $key) {
-					// if flexform setting is empty and value is available in TS
-				if ((!isset($originalSettings[$key]) || empty($originalSettings[$key]))
-						&& isset($tsSettings['settings'][$key])) {
-					$originalSettings[$key] = $tsSettings['settings'][$key];
-				}
-			}
-		}
-		
-		// Use stdWrap for given defined settings
-		if (isset($originalSettings['useStdWrap']) && !empty($originalSettings['useStdWrap'])) {
-			$typoScriptService = t3lib_div::makeInstance('Tx_Extbase_Service_TypoScriptService');
-			$originalSettings = $typoScriptService->convertPlainArrayToTypoScriptArray($originalSettings);
-			$stdWrapProperties = t3lib_div::trimExplode(',', $originalSettings['useStdWrap'], TRUE);
-
-			foreach ($stdWrapProperties as $key) {
-				if (is_array($originalSettings[$key . '.'])) {
-					$originalSettings[$key] = $this->configurationManager->getContentObject()->stdWrap(
-							$originalSettings[$key],
-							$originalSettings[$key . '.']
-					);
-				}
-			}
-		}
-
-		$this->settings = $originalSettings;
-	}
-	*/
-
-	
 	
 	/**
 	 * Initializes the current action
@@ -117,7 +64,7 @@ $this->configurationManager = $configurationManager;
 	public function initializeAction() {
 		//Validation. Quick & dirty message but should never appear in production.
 		if(!isset($this->settings['includes']))
-			return 'Typoscript setup file not included for qm_slider. Please include it somewhere.';
+			return 'Typoscript setup file not included for tx_vibeo. Please include it somewhere.';
 		
 		// Width / height fix
 		if($this->settings['player']['videoWidth'] <= 0)
@@ -138,10 +85,12 @@ $this->configurationManager = $configurationManager;
 	*/
 	protected function setHeaders() {
 		if(!self::$headerIncluded) {
+
 			if($this->settings['includes']['jquery'])
 				$this->response->addAdditionalHeaderData('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>');
 
-			$this->response->addAdditionalHeaderData('<script type="text/javascript" src="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/mediaelement-and-player.min.js"></script>');
+            if($this->settings['includes']['mediaelement'])
+			    $this->response->addAdditionalHeaderData('<script type="text/javascript" src="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/mediaelement-and-player.min.js"></script>');
 
 			if($this->settings['includes']['jquery-resize'])
 				$this->response->addAdditionalHeaderData('<script type="text/javascript" src="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/jquery.ba-resize.min.js"></script>');
@@ -150,11 +99,12 @@ $this->configurationManager = $configurationManager;
 						
 			if($this->settings['includes']['css'])
 				$this->response->addAdditionalHeaderData('<link rel="stylesheet" href="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/CSS/tx-vibeo.css" />');
-				
-			$this->response->addAdditionalHeaderData('
-				<link rel="stylesheet" href="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/mediaelementplayer.css" />
-				<link rel="stylesheet" href="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/skin-gray.css" />
-			');
+
+            if($this->settings['includes']['mediaelement-css'])
+			    $this->response->addAdditionalHeaderData('<link rel="stylesheet" href="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/mediaelementplayer.css" />');
+
+            if($this->settings['includes']['mediaelement-skin-css'])
+                $this->response->addAdditionalHeaderData('<link rel="stylesheet" href="'.t3lib_extMgm::siteRelPath($this->extKey).'Resources/Public/Vibeo/skin-gray.css" />');
 
 			self::$headerIncluded = true;
 		}
@@ -167,11 +117,15 @@ $this->configurationManager = $configurationManager;
 	 */
 	protected function getJSPlayerConfigurationString() {
 		$options = array();
+        $ignore = array('defaultVideoWidth','defaultVideoHeight','videoWidth','videoHeight','audioWidth','audioHeight');
 		
 		foreach($this->settings['player'] as $param => $value) {
+            if($param === "startVolume"){
+                $value = trim($value) / 100;
+            }
 			$value = trim($value);
 			
-			if($value === '')
+			if($value === '' || in_array($param, $ignore))
 				continue;
 			if(strpos($value, 'LLL:') === 0) // Language label
 				$options[] = $param.': "'. Tx_Extbase_Utility_Localization::translate($value, $this->extKey) .'"';

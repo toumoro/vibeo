@@ -17,6 +17,9 @@ plugin.tx_vibeo {
 		includes {
 			# jQuery 1.7.2. Set to 0 to include your own.
 			jquery = {$plugin.tx_vibeo.settings.includes.jquery}
+
+			# Mediaelement. Set to 0 to include your own.
+			mediaelement = {$plugin.tx_vibeo.settings.includes.mediaelement}
 					
 			# jQuery resize. Set to 0 to include your own.
 			jquery-resize = {$plugin.tx_vibeo.settings.includes.jquery-resize}
@@ -26,6 +29,12 @@ plugin.tx_vibeo {
 			
 			# Default CSS. Set to 0 to include your own.
 			css = {$plugin.tx_vibeo.settings.includes.css}
+
+			# Default Mediaelement CSS. Set to 0 to include your own.
+			mediaelement-css = {$plugin.tx_vibeo.settings.includes.mediaelement-css}
+
+			# Default Mediaelement Skin CSS. Set to 0 to include your own.
+			mediaelement-skin-css = {$plugin.tx_vibeo.settings.includes.mediaelement-skin-css}
 		}
 		
 		records {

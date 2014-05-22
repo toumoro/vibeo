@@ -51,9 +51,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 					</f:if>
 				}
 			}
-			$('.tx-vibeo-player').mediaelementplayer(
-				<f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
-			);
+            <f:format.raw>$(function(){</f:format.raw>
+                $('.tx-vibeo-player').mediaelementplayer(
+                    <f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
+                );
+                <f:format.raw>});</f:format.raw>
 
 		</script>
 

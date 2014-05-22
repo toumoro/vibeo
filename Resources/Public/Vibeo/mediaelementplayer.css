@@ -1,8 +1,3 @@
-/* line 76, sass/mediaelementplayer.scss */
-/*body {
-  font-size: 1em;
-}*/
-
 /* line 79, sass/mediaelementplayer.scss */
 .invisible {
   display: none;
@@ -133,7 +128,6 @@
   background-image: -webkit-linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
   background-image: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
   background-image: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
-  background-image: -ms-linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
   background-image: linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF323232', endColorstr='#FF000000');
@@ -163,7 +157,6 @@
   background-image: -webkit-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   background-image: -moz-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   background-image: -o-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
-  background-image: -ms-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF323232', endColorstr='#FF000000');
@@ -222,35 +215,35 @@
 /* background for IE */
 /* line 247, sass/mediaelementplayer.scss */
 .no-svg .mejs-tooltip {
-  background: url(controls/tooltip.png) no-repeat center center;
+  background: url(controls/black/tooltip.png) no-repeat center center;
 }
 /* line 249, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-play button {
-  background: url(controls/play.png) no-repeat center center;
+  background: url(controls/black/play.png) no-repeat center center;
 }
 /* line 251, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-pause button {
-  background: url(controls/pause.png) no-repeat center center;
+  background: url(controls/black/pause.png) no-repeat center center;
 }
 /* line 253, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-stop button {
-  background: url(controls/stop.png) no-repeat center center;
+  background: url(controls/black/stop.png) no-repeat center center;
 }
 /* line 255, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-fullscreen-button button {
-  background: url(controls/fullscreen.png) no-repeat center center;
+  background: url(controls/black/fullscreen.png) no-repeat center center;
 }
 /* line 257, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-unfullscreen button {
-  background: url(controls/unfullscreen.png) no-repeat center center;
+  background: url(controls/black/unfullscreen.png) no-repeat center center;
 }
 /* line 260, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-mute button {
-  background: url(controls/mute.png) no-repeat center center;
+  background: url(controls/black/mute.png) no-repeat center center;
 }
 /* line 262, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-unmute button {
-  background: url(controls/unmute.png) no-repeat center center;
+  background: url(controls/black/unmute.png) no-repeat center center;
 }
 /* line 264, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-captions-button {
@@ -258,36 +251,36 @@
 }
 /* line 266, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-captions-button button {
-  background: transparent url(controls/caption.png) no-repeat center center;
+  background: transparent url(controls/black/caption.png) no-repeat center center;
 }
 /* line 268, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-loop-off button {
-  background: transparent url(controls/loopoff.png) no-repeat center center;
+  background: transparent url(controls/black/loopoff.png) no-repeat center center;
 }
 /* line 270, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-loop-on button {
-  background: transparent url(controls/loopon.png) no-repeat center center;
+  background: transparent url(controls/black/loopon.png) no-repeat center center;
 }
 /* line 272, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-backlight-off button {
-  background: transparent url(controls/backlightoff.png) no-repeat center center;
+  background: transparent url(controls/black/backlightoff.png) no-repeat center center;
 }
 /* line 274, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-backlight-on button {
-  background: transparent url(controls/backlighton.png) no-repeat center center;
+  background: transparent url(controls/black/backlighton.png) no-repeat center center;
 }
 /* line 276, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-picturecontrols-button {
-  background: transparent url(controls/picturecontrols.png) no-repeat center center;
+  background: transparent url(controls/black/picturecontrols.png) no-repeat center center;
 }
 /* line 279, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-time-rail .mejs-time-handle-rewind {
-  background: transparent url(controls/rail_-.png) no-repeat center center;
+  background: transparent url(controls/black/rail_-.png) no-repeat center center;
   background-color: #333333;
 }
 /* line 281, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-time-rail .mejs-time-handle-forward {
-  background: transparent url(controls/rail_+.png) no-repeat center center;
+  background: transparent url(controls/black/rail_+.png) no-repeat center center;
   background-color: #333333;
 }
 /* line 284, sass/mediaelementplayer.scss */
@@ -296,12 +289,12 @@
 }
 /* line 286, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-plus, .no-svg .mejs-controls .mejs-volume-button .mejs-volume-slider.horizontal .mejs-volume-plus {
-  background: transparent url(controls/volume_+.png) no-repeat center center;
+  background: transparent url(controls/black/volume_+.png) no-repeat center center;
   background-color: black;
 }
 /* line 288, sass/mediaelementplayer.scss */
 .no-svg .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-minus, .no-svg .mejs-controls .mejs-volume-button .mejs-volume-slider.horizontal .mejs-volume-minus {
-  background: transparent url(controls/volume_-.png) no-repeat center center;
+  background: transparent url(controls/black/volume_-.png) no-repeat center center;
   background-color: black;
 }
 
@@ -319,7 +312,7 @@
   right: 5px;
   height: 0.6em;
   width: 0.6em;
-  background: transparent url(controls/tooltip.svg) no-repeat;
+  background: transparent url(controls/black/tooltip.svg) no-repeat;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -357,7 +350,7 @@
 }
 /* line 330, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-play button {
-  background: transparent url(controls/play.svg) no-repeat;
+  background: transparent url(controls/black/play.svg) no-repeat;
   background-size: contain;
 }
 /* line 333, sass/mediaelementplayer.scss */
@@ -366,7 +359,7 @@
 }
 /* line 336, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-pause button {
-  background: transparent url(controls/pause.svg) no-repeat;
+  background: transparent url(controls/black/pause.svg) no-repeat;
   background-size: contain;
 }
 /* line 339, sass/mediaelementplayer.scss */
@@ -375,7 +368,7 @@
 }
 /* line 342, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-stop button {
-  background: transparent url(controls/stop.svg) no-repeat;
+  background: transparent url(controls/black/stop.svg) no-repeat;
   background-size: contain;
 }
 /* line 345, sass/mediaelementplayer.scss */
@@ -458,11 +451,10 @@
   display: block;
   width: 180px;
   height: 0.6em;
-  -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -484,7 +476,6 @@
   background-image: -webkit-linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8));
   background-image: -moz-linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8));
   background-image: -o-linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8));
-  background-image: -ms-linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8));
   background-image: linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1E1E1E', endColorstr='#FF3C3C3C');
@@ -497,7 +488,6 @@
   background-image: -webkit-linear-gradient(rgba(221, 221, 221, 0.2), rgba(221, 221, 221, 0.2));
   background-image: -moz-linear-gradient(rgba(221, 221, 221, 0.2), rgba(221, 221, 221, 0.2));
   background-image: -o-linear-gradient(rgba(221, 221, 221, 0.2), rgba(221, 221, 221, 0.2));
-  background-image: -ms-linear-gradient(rgba(221, 221, 221, 0.2), rgba(221, 221, 221, 0.2));
   background-image: linear-gradient(rgba(221, 221, 221, 0.2), rgba(221, 221, 221, 0.2));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDDDDDD', endColorstr='#FFDDDDDD');
@@ -523,7 +513,6 @@
   background-image: -webkit-linear-gradient(rgba(44, 124, 145, 0.8), rgba(78, 183, 212, 0.8));
   background-image: -moz-linear-gradient(rgba(44, 124, 145, 0.8), rgba(78, 183, 212, 0.8));
   background-image: -o-linear-gradient(rgba(44, 124, 145, 0.8), rgba(78, 183, 212, 0.8));
-  background-image: -ms-linear-gradient(rgba(44, 124, 145, 0.8), rgba(78, 183, 212, 0.8));
   background-image: linear-gradient(rgba(44, 124, 145, 0.8), rgba(78, 183, 212, 0.8));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF2C7C91', endColorstr='#FF4EB7D4');
@@ -537,7 +526,6 @@
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8));
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8));
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8));
-  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8));
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFC8C8C8');
@@ -548,20 +536,19 @@
   margin: 0;
   width: 10px;
   background: #fff;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   cursor: pointer;
-  border: solid 2px #333;
+  border: solid 2px #333333;
   top: -2px;
   text-align: center;
 }
 /* line 414, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-time-rail .mejs-time-handle-rewind {
-  background: transparent url(controls/rail_-.svg) no-repeat;
+  background: transparent url(controls/black/rail_-.svg) no-repeat;
   background-color: #333333;
   background-size: contain;
   height: 0.8em;
@@ -576,7 +563,7 @@
 }
 /* line 425, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-time-rail .mejs-time-handle-forward {
-  background: transparent url(controls/rail_+.svg) no-repeat;
+  background: transparent url(controls/black/rail_+.svg) no-repeat;
   background-color: #333333;
   background-size: contain;
   height: 0.8em;
@@ -596,7 +583,7 @@
   background: #eee;
   width: auto;
   height: auto;
-  border: solid 1px #333;
+  border: solid 1px #333333;
   top: -2.3em;
   text-align: center;
   color: #111;
@@ -618,13 +605,12 @@
   width: 0;
   height: 0;
   line-height: 0;
-  border: solid 0.35em #eee;
-  border-color: #eee transparent transparent transparent;
-  -moz-border-radius: 0;
+  border: solid 0.35em #eeeeee;
+  border-color: #eeeeee transparent transparent transparent;
   -webkit-border-radius: 0;
-  -o-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -khtml-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   bottom: -0.57em;
   left: 50%;
@@ -632,7 +618,7 @@
 }
 /* line 468, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-fullscreen-button button {
-  background: transparent url(controls/fullscreen.svg) no-repeat;
+  background: transparent url(controls/black/fullscreen.svg) no-repeat;
   background-size: contain;
 }
 /* line 471, sass/mediaelementplayer.scss */
@@ -641,7 +627,7 @@
 }
 /* line 473, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-unfullscreen button {
-  background: transparent url(controls/unfullscreen.svg) no-repeat;
+  background: transparent url(controls/black/unfullscreen.svg) no-repeat;
   background-size: contain;
 }
 /* line 476, sass/mediaelementplayer.scss */
@@ -650,7 +636,7 @@
 }
 /* line 480, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-mute button {
-  background: transparent url(controls/mute.svg) no-repeat;
+  background: transparent url(controls/black/mute.svg) no-repeat;
   background-size: contain;
 }
 /* line 483, sass/mediaelementplayer.scss */
@@ -659,7 +645,7 @@
 }
 /* line 485, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-unmute button {
-  background: transparent url(controls/unmute.svg) no-repeat;
+  background: transparent url(controls/black/unmute.svg) no-repeat;
   background-size: contain;
 }
 /* line 488, sass/mediaelementplayer.scss */
@@ -679,11 +665,10 @@
   width: 1em;
   background: url("background.png");
   background: rgba(50, 50, 50, 0.8);
-  -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  -o-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -khtml-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   bottom: 1em;
   z-index: 1;
@@ -692,11 +677,10 @@
 }
 /* line 504, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-volume-button:hover {
-  -moz-border-radius: 0 0 4px 4px;
   -webkit-border-radius: 0 0 4px 4px;
-  -o-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
   -ms-border-radius: 0 0 4px 4px;
-  -khtml-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
 /* line 507, sass/mediaelementplayer.scss */
@@ -731,17 +715,16 @@
   background: #ddd;
   background: white;
   cursor: n-resize;
-  -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
-  -o-border-radius: 1px;
+  -moz-border-radius: 1px;
   -ms-border-radius: 1px;
-  -khtml-border-radius: 1px;
+  -o-border-radius: 1px;
   border-radius: 1px;
   margin: 0;
 }
 /* line 536, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-plus {
-  background: transparent url(controls/volume_+.svg) no-repeat;
+  background: transparent url(controls/black/volume_+.svg) no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: contain;
   height: 0.8em;
@@ -756,7 +739,7 @@
 }
 /* line 547, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-minus {
-  background: transparent url(controls/volume_-.svg) no-repeat;
+  background: transparent url(controls/black/volume_-.svg) no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: contain;
   height: 0.8em;
@@ -813,17 +796,17 @@
   position: relative;
 }
 /* line 593, sass/mediaelementplayer.scss */
+.mejs-controls .mejs-captions-button.activeButton button {
+  background-color: #323232;
+}
+/* line 594, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-captions-button button {
-  background: transparent url(controls/caption.svg) no-repeat;
+  background: transparent url(controls/black/caption.svg) no-repeat;
   background-size: contain;
 }
-/* line 596, sass/mediaelementplayer.scss */
+/* line 597, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-captions-button button:focus {
   background-color: #666666;
-}
-/* line 598, sass/mediaelementplayer.scss */
-.mejs-controls .mejs-captions-button .activeButton {
-  background-color: #323232;
 }
 /* line 599, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-captions-button .mejs-captions-selector {
@@ -838,11 +821,10 @@
   border: solid 1px transparent;
   padding: 10px;
   overflow: hidden;
-  -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  -o-border-radius: 0;
+  -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -khtml-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
 }
 /* line 612, sass/mediaelementplayer.scss */
@@ -888,7 +870,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  -xborder-right: solid 1px #fff;
+  -xborder-right: solid 1px white;
   width: 10000px;
 }
 /* line 646, sass/mediaelementplayer.scss */
@@ -901,7 +883,6 @@
   background-image: -webkit-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   background-image: -moz-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   background-image: -o-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
-  background-image: -ms-linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF323232', endColorstr='#FF000000');
@@ -914,8 +895,8 @@
   color: #fff;
   padding: 5px;
   display: block;
-  border-right: solid 1px #333;
-  border-bottom: solid 1px #333;
+  border-right: solid 1px #333333;
+  border-bottom: solid 1px #333333;
   cursor: pointer;
 }
 /* line 663, sass/mediaelementplayer.scss */
@@ -930,7 +911,6 @@
   background-image: -webkit-linear-gradient(rgba(102, 102, 102, 0.6), rgba(50, 50, 50, 0.6));
   background-image: -moz-linear-gradient(rgba(102, 102, 102, 0.6), rgba(50, 50, 50, 0.6));
   background-image: -o-linear-gradient(rgba(102, 102, 102, 0.6), rgba(50, 50, 50, 0.6));
-  background-image: -ms-linear-gradient(rgba(102, 102, 102, 0.6), rgba(50, 50, 50, 0.6));
   background-image: linear-gradient(rgba(102, 102, 102, 0.6), rgba(50, 50, 50, 0.6));
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF666666', endColorstr='#FF323232');
@@ -1019,27 +999,27 @@
 /* Start: Loop */
 /* line 737, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-loop-off button {
-  background: transparent url(controls/loopoff.svg) no-repeat;
+  background: transparent url(controls/black/loopoff.svg) no-repeat;
   background-size: contain;
 }
 /* line 740, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-loop-on button {
-  background: transparent url(controls/loopon.svg) no-repeat;
+  background: transparent url(controls/black/loopon.svg) no-repeat;
   background-size: contain;
 }
 /* line 743, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-backlight-off button {
-  background: transparent url(controls/backlightoff.svg) no-repeat;
+  background: transparent url(controls/black/backlightoff.svg) no-repeat;
   background-size: contain;
 }
 /* line 746, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-backlight-on button {
-  background: transparent url(controls/backlighton.svg) no-repeat;
+  background: transparent url(controls/black/backlighton.svg) no-repeat;
   background-size: contain;
 }
 /* line 749, sass/mediaelementplayer.scss */
 .mejs-controls .mejs-picturecontrols-button {
-  background: transparent url(controls/picturecontrols.svg) no-repeat;
+  background: transparent url(controls/black/picturecontrols.svg) no-repeat;
   background-size: contain;
 }
 
@@ -1054,16 +1034,15 @@
   position: absolute;
   width: 150px;
   padding: 10px;
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   top: 0;
   left: 0;
   background: #fff;
-  border: solid 1px #999;
+  border: solid 1px #999999;
   z-index: 1001;
   /* make sure it shows on fullscreen */
 }

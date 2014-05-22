@@ -31,7 +31,7 @@
 			<label index="vibeomedialist.player.showTimecodeFrameCount">Show framecount in timecode (## =00 =00 =00)</label>
 			<label index="vibeomedialist.player.framesPerSecond">Frames per second. Used when showTimecodeFrameCount is enabled</label>
 			
-			<label index="vibeomedialist.player.startVolume">Default volume at startup (0-1)</label>
+			<label index="vibeomedialist.player.startVolume">Default volume at startup (0-100)</label>
 			<label index="vibeomedialist.player.loop">Make the player automatically restart</label>
 			<label index="vibeomedialist.player.iPadUseNativeControls">Force iPad's native controls</label>
 			<label index="vibeomedialist.player.iPhoneUseNativeControls">Force iPhone's native controls</label>
@@ -75,7 +75,7 @@
 			<label index="vibeomedialist.player.showTimecodeFrameCount">Afficher le compteur d'images dans le compteur de temps (## =00 =00 =00)</label>
 			<label index="vibeomedialist.player.framesPerSecond">Nombre d'images par secondes. À utiliser quand showTimecodeFrameCount est activé</label>
 			
-			<label index="vibeomedialist.player.startVolume">Volume par défaut au début (0-1)</label>
+			<label index="vibeomedialist.player.startVolume">Volume par défaut au début (0-100)</label>
 			<label index="vibeomedialist.player.loop">Rejouer automatiquement</label>
 			<label index="vibeomedialist.player.iPadUseNativeControls">Utiliser les contrôles natifs du iPad</label>
 			<label index="vibeomedialist.player.iPhoneUseNativeControls">Utiliser les contrôles natifs du iPod</label>
@@ -119,7 +119,7 @@
 			<label index="vibeomedialist.player.showTimecodeFrameCount">Afficher le compteur d'images dans le compteur de temps (## =00 =00 =00)</label>
 			<label index="vibeomedialist.player.framesPerSecond">Nombre d'images par secondes. À utiliser quand showTimecodeFrameCount est activé</label>
 			
-			<label index="vibeomedialist.player.startVolume">Volume par défaut au début (0-1)</label>
+			<label index="vibeomedialist.player.startVolume">Volume par défaut au début (0-100)</label>
 			<label index="vibeomedialist.player.loop">Rejouer automatiquement</label>
 			<label index="vibeomedialist.player.iPadUseNativeControls">Utiliser les contrôles natifs du iPad</label>
 			<label index="vibeomedialist.player.iPhoneUseNativeControls">Utiliser les contrôles natifs du iPod</label>

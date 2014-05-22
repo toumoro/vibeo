@@ -17,9 +17,11 @@
 			if(typeof tx_vibeo_player_success_callback == 'undefined') {
 				var tx_vibeo_player_success_callback = function (media, node, player) {}
 			}
-			$('#tx-vibeo-media-{media.uid}').mediaelementplayer(
-				<f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
-			);
+            <f:format.raw>$(function(){</f:format.raw>
+                $('#tx-vibeo-media-{media.uid}').mediaelementplayer(
+                    <f:format.html parseFuncTSPath="">{JSPlayerConfigurationString}</f:format.html>
+                );
+            <f:format.raw>});</f:format.raw>
 		</script>
 
 </f:section>
