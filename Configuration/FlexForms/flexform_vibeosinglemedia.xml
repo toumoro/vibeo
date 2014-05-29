@@ -31,7 +31,7 @@
 							<allowed>MP4, WEBM, OGG, MPEG, M4V, OGV, MOV, RTMP, AAC, MP1, MP2, MP3, MPG, M4A, OGA, WAV, FLV, WMV</allowed>
 							<disallowed>php</disallowed>
 							<size>5</size>
-                            <maxitems>10</maxitems>
+                            				<maxitems>1</maxitems>
 						</config>
 					</TCEforms>
 				</settings.media.files>
