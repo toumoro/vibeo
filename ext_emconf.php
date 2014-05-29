@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = array (
 The documentation will be maintained on the tracker, at http://forge.typo3.org/projects/extension-vibeo',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '0.3.2',
+	'version' => '0.4',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -37,7 +37,7 @@ The documentation will be maintained on the tracker, at http://forge.typo3.org/p
 	array (
 		'depends' => 
 		array (
-			'typo3' => '4.5-0.0.0',
+			'typo3' => '4.5.0-6.2.999',
 		),
 		'conflicts' => 
 		array (
