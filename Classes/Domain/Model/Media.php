@@ -355,8 +355,9 @@ class Tx_Vibeo_Domain_Model_Media extends Tx_Extbase_DomainObject_AbstractEntity
 				$this->setMediaType('video');
 			}
 		} elseif(!empty($media[0])) {
-			$mime = $this->getMimeTypeFromFile(t3lib_div::getFileAbsFileName('uploads/tx_vibeo/'.$media[0]));
-			
+			$resolver = Tx_Vibeo_Utility_Path::getInstance();
+			$filepath = $resolver::resolvePath($media[0]);
+			$mime = $this->getMimeTypeFromFile(t3lib_div::getFileAbsFileName($filepath));
 			$this->setFileType($mime);
 			$this->setMediaType(substr($mime,0,strpos($mime,'/')));
 		}
@@ -447,9 +448,11 @@ class Tx_Vibeo_Domain_Model_Media extends Tx_Extbase_DomainObject_AbstractEntity
 
 		foreach($media as $m) {
 			if(!empty($m)) {
+				$resolver = Tx_Vibeo_Utility_Path::getInstance();
+				$filepath = $resolver::resolvePath($m);
 				$info[] = array(
-					'path' => 'uploads/tx_vibeo/'.$m,
-					'mimetype' => $this->getMimeTypeFromFile(t3lib_div::getFileAbsFileName('uploads/tx_vibeo/'.$m))
+					'path' => $filepath,
+					'mimetype' => $this->getMimeTypeFromFile(t3lib_div::getFileAbsFileName($filepath))
 				);
 			}
 		}
@@ -464,10 +467,33 @@ class Tx_Vibeo_Domain_Model_Media extends Tx_Extbase_DomainObject_AbstractEntity
 	public function getFirstMediaFile() {
 		$media = explode(',',$this->getPath());
 		
-		if(!empty($media))
-			return 'uploads/tx_vibeo/'.$media[0];
+		if(!empty($media)) {
+			$resolver = Tx_Vibeo_Utility_Path::getInstance();
+			$filepath = $resolver::resolvePath($media[0]);
+			return $filepath;
+		}
 		
 		return '';
+	}
+	
+	
+	public function getImagePath() {
+		$filepath = $this->image;
+		if (!empty($this->image)) {
+			$resolver = Tx_Vibeo_Utility_Path::getInstance();
+			$filepath = $resolver::resolvePath($this->image);
+		}
+		return $filepath;
+		
+	}
+	public function getTrackPath() {
+		$trackpath = $this->track;
+		if (!empty($this->track)) {
+			$resolver = Tx_Vibeo_Utility_Path::getInstance();
+			$trackpath = $resolver::resolvePath($this->track);
+		}
+		return $trackpath;
+		
 	}
 }
 ?>

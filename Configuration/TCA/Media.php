@@ -145,12 +145,25 @@ $TCA['tx_vibeo_domain_model_media'] = array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:vibeo/Resources/Private/Language/locallang_db.xml:tx_vibeo_domain_model_media.path',
 			'config' => array(
-				'type' => 'group',
-				'internal_type' => 'file',
-				'uploadfolder' => 'uploads/tx_vibeo',
-				'allowed' => 'MP4, WEBM, OGG, MPEG, M4V, OGV, MOV, RTMP, AAC, MP1, MP2, MP3, MPG, M4A, OGA, WAV, FLV, WMV',
-				'disallowed' => 'php',
-				'size' => 5,
+				'type' => 'input',
+				'size' => '50',
+				'max' => '256',
+				'eval' => 'trim',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array(
+						'type' => 'popup',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
+						'icon' => 'link_popup.gif',
+						'script' => 'browse_links.php?mode=wizard',
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
+						'params' => array(
+							'allowedExtensions' => 'MP4, WEBM, OGG, MPEG, M4V, OGV, MOV, RTMP, AAC, MP1, MP2, MP3, MPG, M4A, OGA, WAV, FLV, WMV',
+							'blindLinkOptions' => 'page,folder,mail,url',
+						)
+					),
+				),
+				'softref' => 'typolink',
 				//'max_size' =>
 			),
 		),
@@ -167,32 +180,52 @@ $TCA['tx_vibeo_domain_model_media'] = array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:vibeo/Resources/Private/Language/locallang_db.xml:tx_vibeo_domain_model_media.image',
 			'config' => array(
-				'type' => 'group',
-				'internal_type' => 'file',
-				'uploadfolder' => 'uploads/tx_vibeo',
-				'show_thumbs' => 1,
-				'size' => 1,
-				'maxitems' => 1,
-				'minitems' => 0,
-				'autoSizeMax' => 1,
-				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-				'disallowed' => '',
-				//'max_size' => 
+				'type' => 'input',
+				'size' => '50',
+				'max' => '256',
+				'eval' => 'trim',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array(
+						'type' => 'popup',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
+						'icon' => 'link_popup.gif',
+						'script' => 'browse_links.php?mode=wizard',
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
+						'params' => array(
+							'allowedExtensions' => 'JPG,JPEG,PNG,BMP,GIF',
+							'blindLinkOptions' => 'page,folder,mail,url',
+						)
+					),
+				),
+				'softref' => 'typolink',
+				//'max_size' =>
 			),
 		),
 		'track' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:vibeo/Resources/Private/Language/locallang_db.xml:tx_vibeo_domain_model_media.track',
 			'config' => array(
-				'type' => 'group',
-				'internal_type' => 'file',
-				'uploadfolder' => 'uploads/tx_vibeo',
-				'allowed' => 'VTT, TTML, SRT, TXT, CSV, XML',
-				'disallowed' => 'php',
-				'size' => 1,
-				'maxitems' => 1, 
-				'minitems' => 0,
-				'autoSizeMax' => 1,
+				'type' => 'input',
+				'size' => '50',
+				'max' => '256',
+				'eval' => 'trim',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array(
+						'type' => 'popup',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
+						'icon' => 'link_popup.gif',
+						'script' => 'browse_links.php?mode=wizard',
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
+						'params' => array(
+							'allowedExtensions' => 'VTT, TTML, SRT, TXT, CSV, XML',
+							'blindLinkOptions' => 'page,folder,mail,url',
+						)
+					),
+				),
+				'softref' => 'typolink',
+				//'max_size' =>
 			),
 		),
 	),
