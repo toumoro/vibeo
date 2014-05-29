@@ -195,12 +195,17 @@ class Tx_Vibeo_Controller_MediaController extends Tx_Extbase_MVC_Controller_Acti
 		if($this->settings['media']['track'])
 			$media->setTrack($this->settings['media']['track']);
 			
-		$media->setUid(uniqid());
+		$media->setUid($this->getUniqId());
 		
 		$this->view->assign('settings', $this->settings); // Reassign because we changed the settings
 		$this->view->assign('media', $media);
 		$this->view->assign('JSPlayerConfigurationString', $this->getJSPlayerConfigurationString());
 		$this->view->assign('extRelativePath', t3lib_extMgm::extRelPath($this->extKey));
+	}
+
+	protected function getUniqId() {
+		$this->contentObj = $this->configurationManager->getContentObject();
+		return $this->contentObj->data['uid'];
 	}
 
 }
